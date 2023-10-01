@@ -22,6 +22,7 @@ docker run -d -p 6379:6379 redis
 
 ### Get libraries
 ```bash
+rm package-lock.json
 npm install
 ```
 
@@ -52,7 +53,8 @@ wget http://download.redis.io/redis-stable.tar.gz
 tar xvzf redis-stable.tar.gz
 cd redis-stable
 make
-   ```
+apt install redis-cli
+```
 
 3b. Run data generation script (from root of project)
 ```bash
